@@ -1,0 +1,345 @@
+/* reset */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* page principale */
+  
+  
+  
+  
+  
+  
+  /* header */
+  header {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    margin-top: 2.3%;
+    margin-bottom: 10%;
+  }
+  
+  
+  /* logo */
+  .logo_page_acceuil {
+    position: absolute;
+  }
+  .logo_acceuil {
+    height: 8.5vw;
+    border-radius: 50%;
+    border: 2px solid #5e17eb;
+  }
+  
+  
+  /* bouttons */
+  .bouttons_acceuil {
+    background-color: #5e17eb;
+    color: #ffffff;
+    padding: 1.5vw 2vw; 
+    margin-left: 5%;
+    margin-right: 2%;
+    border-radius: 40px;
+    font-size: 1.5vw;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.5s ease;
+  }
+  .bouttons_acceuil:hover {
+    background-color: #5500ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  /* rubrique */
+  .rubrique_1, .rubrique_2{
+    font-size: 2vw;
+    color: #5e17eb;
+    font-weight: 900;
+    text-decoration: none;
+    white-space: nowrap;
+  
+  }
+  
+  .rubrique_2 {
+    position: relative; 
+  }
+  
+  .pulse {
+    position: absolute;
+    top: 50%;
+    right: -20%; 
+    display: flex;
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: #ff0000;
+    border-radius: 50%;
+    animation: pulseAnimation 1.3s ease-in-out infinite; 
+  }
+  
+  @keyframes pulseAnimation {
+    0% {
+      transform: scale(1.8); 
+      opacity: 0.3; 
+    }
+    50% {
+      transform: scale(2.3); 
+      opacity: 0.7; 
+    }
+    100% {
+      transform: scale(1.8); 
+      opacity: 0.3; 
+    }
+  }
+  
+  
+  
+  
+  .rubrique_page_acceuil {
+    margin-left: 55%;
+    margin-right: 3%;
+  }
+  
+  
+  /* image_centrale */
+  .Image_centrale {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+  
+  }
+  
+  .image_centrale {
+    width: 65%; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Maintient les proportions de l'image */
+  }
+  
+  
+  /* Texte */
+  p {
+    margin-top: 10%;
+  }
+  
+  
+  /* responsive */
+  @media screen and (max-width: 1350px) {
+    .Image_centrale {
+        margin-top: 5%;
+    }
+    .image_centrale {
+        width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 1150px) {
+    .Image_centrale {
+        margin-top: 6%;
+    }
+    .image_centrale {
+        width: 90%;
+    }
+    header {
+        margin-top: 35px;
+    }
+    .logo_acceuil {
+        height: 10vw;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .logo_acceuil {
+        height: 12vw;
+    }
+    .rubrique_1, .rubrique_2{
+        font-size: 2.3vw;
+    }
+    .rubrique_page_acceuil {
+        margin-left: 50%;
+    }
+    .bouttons_acceuil {
+        padding: 2vw 2.5vw; 
+        font-size: 1.6vw;
+    }
+    .image_centrale {
+        width: 95%;
+    }
+    .Image_centrale {
+        margin-top: 5%;
+    }
+  }
+  
+  @media screen and (max-width: 680px) {
+    .logo_acceuil {
+        height: 14vw;
+    }
+    .rubrique_1, .rubrique_2{
+        font-size: 2.7vw;
+    }
+    .rubrique_page_acceuil {
+        margin-left: 42%;
+    }
+    .bouttons_acceuil {
+        padding: 2.5vw 3vw; 
+        font-size: 1.9vw;
+    }
+    .Image_centrale {
+        margin-top: 7%;
+    }
+    .image_centrale {
+        width: 95%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .logo_acceuil {
+        height: 26vw;
+        margin-bottom: 15px;
+    }
+    .rubrique_1, .rubrique_2{
+        font-size: 5vw;
+    }
+    .rubrique_2 {
+        text-align: center;
+        margin-bottom: 15px;
+  
+    }
+    .bouttons_acceuil {
+        padding: 3.5vw 4vw; 
+        font-size: 3.5vw;
+    }
+    .image_centrale {
+        display: none;
+    }
+    header {
+        margin-top: 5px;
+        flex-direction: column;
+    }
+    .logo_page_acceuil{
+    position: relative;
+    }
+    .rubrique_page_acceuil {
+        margin: 0%;
+        text-align: center;
+        margin-bottom: 15px;
+  
+    }
+  }
+  
+  /* actualité */
+  
+  
+  /* forme global */
+  .div_information_centrale {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: center;
+    align-items: center;
+  
+  
+  
+  }
+  .information1,.information2, .information3 {
+    margin: 10px;
+    background: #8c52ff;
+    color: white;
+    border-radius: 2%;
+    width: 35%;
+  
+  }
+  
+  
+  /* image + animation image*/
+  .div_information_centrale img {
+    transform: translateY(-50px);
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 1%;
+    border: none;
+    transition: transform 0.3s ease
+  
+  }
+  .div_information_centrale img:hover {
+    transform: scale(1.1); /* Mise à l'échelle à 120% lorsqu'il est survolé */
+  }
+  
+  
+  /* texte */
+  p {
+    margin: 0%;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 200;
+    margin: 20px;
+    margin-top: 0;
+  }
+  
+  /* responsive */
+  @media screen and (max-width: 1350px) {
+    .div_information_centrale {
+      flex-direction: column;
+      align-items: center; 
+      margin-top: 0%;
+    }
+    .information1, .information2, .information3 {
+      margin-top: 70px;
+      text-align: center;
+      width: 65%;
+    }
+    .div_information_centrale img {
+      margin-left: 3%;
+    }
+    p {
+      font-size: 2vw;
+    }
+  
+    .pulse {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    p {
+      font-size: 2.5vw;
+    }
+    .information1, .information2, .information3 {
+      width: 75%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    p {
+      font-size: 3.1vw;
+    }
+    .information1, .information2, .information3 {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    p {
+      font-size: 3.4vw;
+    }
+    .information1, .information2, .information3 {
+      width: 85%;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    p {
+      font-size: 3.6vw;
+    }
+    .information1, .information2, .information3 {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    p {
+      font-size: 4.5vw;
+    }
+    .information1, .information2, .information3 {
+      width: 95%;
+    }
+  }
+  
